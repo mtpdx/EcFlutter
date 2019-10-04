@@ -6,6 +6,7 @@ import 'package:flutter_ec/ui/home/HomeJxPage.dart';
 
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter_ec/common/entity/Home.dart';
+import 'package:flutter_ec/ui/home/SearchGoodsPage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -79,28 +80,40 @@ class _HomePageState extends State<HomePage> {
 }
 
 class SearchView extends StatelessWidget {
+  final String searchKey  = '耳机';
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return GestureDetector(
+      onTap: (){
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (BuildContext context) {
+          return SearchGoodsPage(searchKey: searchKey);
+        })).then((val) {
+          // 详情页面返回时传递过来的参数
+          print(val);
+        });
+      },
+      child: Container(
 //      margin: EdgeInsets.only(left: 16, right: 16),
-      padding: EdgeInsets.only(left: 5),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(28)),
-          color: DColor.mf),
-      height: 32,
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Icon(
-            Icons.search,
-            size: 20,
-            color: DColor.m9,
-          ),
-          Text(
-            '耳机',
-            style: TextStyle(fontSize: 14, color: DColor.m9),
-          ),
-        ],
+        padding: EdgeInsets.only(left: 5),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(28)),
+            color: DColor.mf),
+        height: 32,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Icon(
+              Icons.search,
+              size: 20,
+              color: DColor.m9,
+            ),
+            Text(
+              '$searchKey',
+              style: TextStyle(fontSize: 14, color: DColor.m9),
+            ),
+          ],
+        ),
       ),
     );
   }
