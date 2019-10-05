@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ec/ui/home/HomePage.dart';
 import 'package:flutter_ec/ui/message/MessagePage.dart';
 import 'package:flutter_ec/ui/code/CodePage.dart';
@@ -10,7 +10,7 @@ import 'package:flutter_ec/common/Color.dart';
 class EcMainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-//    ScreenUtil.instance = ScreenUtil(width: 750, height: 1334)..init(context);
+    ScreenUtil.instance = ScreenUtil(width: 750, height: 1334)..init(context);
     return DefaultTabController(
       length: 5,
       child: Scaffold(
