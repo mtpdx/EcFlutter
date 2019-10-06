@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ec/common/EcIcons.dart';
 
 class FilterTab extends StatefulWidget {
   FilterTab({
@@ -76,15 +77,15 @@ class _FilterTabState extends State<FilterTab> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Icon(
-                    Icons.arrow_drop_up,
-                    size: 15,
+                    EcIcons.icon_paixujiantoushang,
+                    size: 7,
                     color: widget.initialSelection == 2
                         ? Color(0xfffe2121)
                         : Color(0xff666666),
                   ),
                   Icon(
-                    Icons.arrow_drop_down,
-                    size: 15,
+                    EcIcons.icon_paixujiantouxia,
+                    size: 7,
                     color: widget.initialSelection == 3
                         ? Color(0xfffe2121)
                         : Color(0xff666666),
@@ -109,7 +110,7 @@ class _FilterTabState extends State<FilterTab> {
             }
           },
           child: Icon(
-            widget.showTag == 0 ? Icons.grid_on : Icons.list,
+            widget.showTag == 0 ? EcIcons.icon_duohangchenlie : EcIcons.icon_danhangchenlie,
             size: 18,
             color: Color(0xff666666)
           ),

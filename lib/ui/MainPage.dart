@@ -6,6 +6,7 @@ import 'package:flutter_ec/ui/code/CodePage.dart';
 import 'package:flutter_ec/ui/cart/CartPage.dart';
 import 'package:flutter_ec/ui/mine/MinePage.dart';
 import 'package:flutter_ec/common/Color.dart';
+import 'package:flutter_ec/common/EcIcons.dart';
 
 class EcMainPage extends StatelessWidget {
   @override
@@ -53,8 +54,8 @@ class EcMainPage extends StatelessWidget {
               ),
 //              SizedBox(),
               Tab(
-                text: '取证码',
-                icon: Icon(Icons.camera),
+//                text: '取证码',
+                icon: Icon(EcIcons.icon_saoma),
               ),
               Tab(
                 text: '购物车',

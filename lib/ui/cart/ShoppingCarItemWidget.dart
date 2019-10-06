@@ -4,6 +4,7 @@ import 'package:flutter_ec/ui/cart/ShoppingCardModel.dart';
 import 'package:flutter_ec/ui/cart/OrderModel.dart';
 import 'package:flutter_ec/ui/cart/CheckBox.dart';
 import 'package:flutter_ec/ui/cart/QuantityWidget.dart';
+import 'package:flutter_ec/common/EcIcons.dart';
 
 typedef AddTop<T> = void Function(T value);
 typedef RemoveTop<T> = void Function(T value);
@@ -57,7 +58,7 @@ class ShoppingCarItemWidget extends StatelessWidget {
                           style: TextStyle(fontSize: 12),
                         ),
                         Icon(
-                          Icons.keyboard_arrow_right,
+                          EcIcons.icon_youjiantou,
                           color: Color(0xFFcbcccb),
                         )
                       ],

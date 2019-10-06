@@ -57,7 +57,10 @@ flutter:
   assets:
     - images/
 
-
+  fonts:
+    - family: ecIconFont
+      fonts:
+        - asset: static/font/ec/iconfont.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

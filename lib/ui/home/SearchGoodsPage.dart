@@ -6,6 +6,7 @@ import 'dart:convert';
 import 'package:flutter_ec/common/Color.dart';
 import 'package:flutter_ec/ui/widget/gzx_search_card.dart';
 import 'package:flutter_ec/ui/home/SearchGoodsResultPage.dart';
+import 'package:flutter_ec/common/EcIcons.dart';
 
 class SearchGoodsPage extends StatefulWidget{
   SearchGoodsPage({Key key, this.searchKey}):super(key: key);
@@ -48,7 +49,7 @@ class _SearchGoodsPageState extends State<SearchGoodsPage>{
           child: Padding(
             padding: EdgeInsets.only(right: 0),
             child:Icon(
-              Icons.arrow_back_ios,
+              EcIcons.icon_fanhuijiantou,
               size: 24,
               color: DColor.m9,
             )

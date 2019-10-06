@@ -6,6 +6,7 @@ import 'package:flutter_ec/ui/widget/SearchResultGridView.dart';
 import 'package:flutter_ec/ui/widget/SearchResultListView.dart';
 import 'package:flutter_ec/common/entity/Search.dart';
 import 'package:flutter_ec/common/service/search.dart';
+import 'package:flutter_ec/common/EcIcons.dart';
 
 class SearchGoodsResultPage extends StatefulWidget {
   SearchGoodsResultPage({Key key, this.searchKey}) : super(key: key);
@@ -61,7 +62,7 @@ class _SearchGoodsResultPageState extends State<SearchGoodsResultPage>
                     Navigator.pop(context);
                   },
                   child: Icon(
-                    Icons.arrow_back_ios,
+                    EcIcons.icon_fanhuijiantou,
                     size: 20,
                     color: DColor.m9,
                   ),

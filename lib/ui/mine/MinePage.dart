@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ec/common/entity/Home.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_ec/common/EcIcons.dart';
 
 class MinePage extends StatefulWidget {
   @override
@@ -143,11 +144,11 @@ class _MinePageState extends State<MinePage> {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: <Widget>[
-                              _buildServerITBtn('联系客服', Icons.headset_mic),
-                              _buildServerITBtn('收货地址', Icons.edit_location),
+                              _buildServerITBtn('联系客服', EcIcons.icon_kefu),
+                              _buildServerITBtn('收货地址', EcIcons.icon_weizhi),
                               _buildServerITBtn(
-                                  '意见反馈', Icons.local_post_office),
-                              _buildServerITBtn('关于我们', Icons.announcement),
+                                  '意见反馈', EcIcons.icon_liuyanpinglun),
+                              _buildServerITBtn('关于我们', EcIcons.icon_diannaodianqi),
                             ],
                           ),
                         )
@@ -502,10 +503,10 @@ class MineSliverAppBar extends SliverPersistentHeaderDelegate {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         _buildOrderITBtn(
-                            '待付款', Icons.account_balance_wallet, '2'),
-                        _buildOrderITBtn('待发货', Icons.payment, '20'),
-                        _buildOrderITBtn('待收货', Icons.local_shipping, ''),
-                        _buildOrderITBtn('退货退款', Icons.monetization_on, '99+'),
+                            '待付款', EcIcons.icon_qianbao, '2'),
+                        _buildOrderITBtn('待发货', EcIcons.icon_zhangdan, '20'),
+                        _buildOrderITBtn('待收货', EcIcons.icon_xiaohuoche, ''),
+                        _buildOrderITBtn('退货退款', EcIcons.icon_duihui, '99+'),
                       ],
                     ),
                   )
@@ -521,7 +522,7 @@ class MineSliverAppBar extends SliverPersistentHeaderDelegate {
             child: Opacity(
               opacity: 1,
               child: Icon(
-                Icons.settings,
+                EcIcons.icon_shezhi,
                 color: _gradientColor(expandedHeight, shrinkOffset, [255,255,255],[51,51,51]),
                 size: 18,
               ),

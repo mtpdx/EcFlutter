@@ -7,6 +7,7 @@ import 'package:flutter_ec/ui/home/HomeJxPage.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter_ec/common/entity/Home.dart';
 import 'package:flutter_ec/ui/home/SearchGoodsPage.dart';
+import 'package:flutter_ec/common/EcIcons.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -42,10 +43,11 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Icon(
-                      Icons.photo_camera,
+                      EcIcons.icon_saoma,
                       size: 18,
                       color: DColor.mf,
                     ),
+                    SizedBox(height: 4,),
                     Text(
                       '扫一扫',
                       style: TextStyle(fontSize: 9, color: DColor.mf),

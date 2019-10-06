@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ec/common/entity/Search.dart';
+import 'package:flutter_ec/common/EcIcons.dart';
 
 class SearchResultGridView extends StatelessWidget {
   final SearchResultListModal list;
@@ -174,7 +175,7 @@ class SearchResultGridView extends StatelessWidget {
                             Container(
                               alignment: Alignment.centerLeft,
                               child: Icon(
-                                Icons.chevron_right,
+                                EcIcons.icon_youjiantou,
                                 size: 18,
                                 color: Color(0xFF333333),
                               ),
