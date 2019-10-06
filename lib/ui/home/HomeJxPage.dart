@@ -17,6 +17,11 @@ class HomeJxPage extends StatefulWidget {
 
 
 class _HomeJxPageState extends State<HomeJxPage> {
+  List<String> bannerList = [
+    'https://hbimg.huabanimg.com/54eb9bf4ab32fc2ec87d7cf7723770ff76984df4225f6-RPItmu_fw658',
+    'https://i.pinimg.com/originals/50/48/65/5048656c5304d1cb0dcb0fc5fd982fad.jpg',
+    'https://about.canva.com/wp-content/uploads/sites/3/2015/02/Etsy-Banners.png'
+  ];
 
   List<Goods> goodsList = [];
   List<Goods> horGoodsList = [];
@@ -123,13 +128,13 @@ class _HomeJxPageState extends State<HomeJxPage> {
                             child: FadeInImage.assetNetwork(
                               placeholder: "images/green.jpg",
                               image:
-                                  'https://about.canva.com/wp-content/uploads/sites/3/2015/02/Etsy-Banners.png',
+                                  '${bannerList[index]}',
                               fit: BoxFit.cover,
                             ),
                           ),
                         );
                       },
-                      itemCount: 3,
+                      itemCount: bannerList.length,
                       pagination: new SwiperPagination(),
 //                      control: new SwiperControl(),
                     ),

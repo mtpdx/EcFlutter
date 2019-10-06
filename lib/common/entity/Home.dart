@@ -9,10 +9,9 @@ class Goods {
 }
 
 class Choice {
-  const Choice({this.title, this.icon, this.id});
+  const Choice({this.title, this.id});
 
   final String title;
-  final IconData icon;
   final int id;
 }
 
@@ -26,28 +25,28 @@ class Cate {
 class HomeCateData{
   List<Cate> getHomeCateOne() => <Cate>[
     Cate(title:'手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
-    Cate(title:'手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
-    Cate(title:'手机手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
-    Cate(title:'手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
-    Cate(title:'手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
-    Cate(title:'手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
-    Cate(title:'手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
-    Cate(title:'手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
-    Cate(title:'手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
-    Cate(title:'手机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/79706/18/6581/112584/5d492587E32ba70ae/47fdb0779e7dad8a.jpg'),
+    Cate(title:'单反相机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t26179/362/900967/280508/457b79f4/5b7fc70cN8375576f.jpg'),
+    Cate(title:'智能手环', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/71446/40/5294/212027/5d37ccdbEc60139a9/04dbe3b30329f01b.jpg'),
+    Cate(title:'蓝牙耳机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t10915/325/2901316976/104238/84c0fe4f/5cdcc911Nd1d8d6dd.jpg'),
+    Cate(title:'机械键盘', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t12286/212/886786636/63634/91ed8424/5a1665d3N85a556ed.jpg'),
+    Cate(title:'游戏机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t24280/355/809346995/58119/d9407f0e/5b442f74N23caa058.jpg'),
+    Cate(title:'智能音箱', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/31784/25/9843/215961/5caabb7cE1798332d/d1fa17bc9f379ad1.jpg'),
+    Cate(title:'笔记本', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/35567/12/9049/159863/5ce4ba08E37d5378f/46b76a72f0e1ba87.jpg'),
+    Cate(title:'台式机', imgUrl:'http://m.360buyimg.com/mobilecms/s750x750_jfs/t1/27614/11/4706/248452/5c345023Ef41760c7/687169631ae19453.jpg'),
+    Cate(title:'更多', imgUrl:'http://bpic.588ku.com/element_pic/01/35/70/59573bf1168c651.jpg'),
   ];
 }
 
 class HomeTabData{
   List<Choice> getHomeTab() => <Choice>[
-    Choice(title: '精选', icon: Icons.directions_car, id: 0),
-    Choice(title: '数码', icon: Icons.directions_bike, id: 1),
-    Choice(title: '女装', icon: Icons.directions_boat, id: 2),
-    Choice(title: '鞋包', icon: Icons.directions_bus, id: 3),
-    Choice(title: '户外', icon: Icons.directions_railway, id: 4),
-    Choice(title: '美妆', icon: Icons.directions_walk, id: 5),
-    Choice(title: '电器', icon: Icons.directions_walk, id: 6),
-    Choice(title: '个护', icon: Icons.directions_walk, id: 7),
+    Choice(title: '精选', id: 0),
+    Choice(title: '数码', id: 1),
+    Choice(title: '女装', id: 2),
+    Choice(title: '鞋包', id: 3),
+    Choice(title: '户外', id: 4),
+    Choice(title: '美妆', id: 5),
+    Choice(title: '电器', id: 6),
+    Choice(title: '个护', id: 7),
   ];
 }
 
