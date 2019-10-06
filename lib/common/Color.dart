@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 class DColor {
   static const Color main = Color(0xFFFE2121);
@@ -12,4 +12,6 @@ class DColor {
   static const Color m9 = Color(0xFF999999);
   static const Color mc = Color(0xFFcccccc);
   static const Color mf = Color(0xFFffffff);
+
+  static Gradient primaryGradient = const LinearGradient(colors: [Colors.orange, Colors.deepOrange]);
 }

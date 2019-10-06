@@ -114,6 +114,7 @@ class _HomeJxPageState extends State<HomeJxPage> {
                     child: new Swiper(
                       scrollDirection: Axis.horizontal,
                       loop: true,
+                      autoplay: true,
                       onTap: (index) {},
                       itemBuilder: (BuildContext context, int index) {
                         return Container(
