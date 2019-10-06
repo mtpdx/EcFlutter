@@ -54,3 +54,5 @@ flutter仿央信优品电商app
 ## 效果预览
 
 <video  width="540" hegiht="960" src="assets/README.assets/ec_flutter.mp4"></video>
+
+<iframe width="540" height="960" src="https://github.com/Ethereal-Coder/EcFlutter/blob/master/assets/README.assets/ec_flutter.mp4" frameborder="0" allowfullscreen></iframe>
